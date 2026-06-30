@@ -6,6 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@drawable/background_auth_dclassics"
     tools:context=".activities.LoginActivity">
 
@@ -45,7 +46,7 @@
         <LinearLayout
             android:id="@+id/TextFieldContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@drawable/auth_top_curve_background"
             android:orientation="vertical"
             android:padding="30dp">

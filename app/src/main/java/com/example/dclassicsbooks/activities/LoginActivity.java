@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginActivity.this,
                     RegisterActivity.class);
             startActivity(intent);
-        })
+        });
 
 //        etUsername = findViewById(R.id.etUsername);
 //        etPassword = findViewById(R.id.etPassword);
