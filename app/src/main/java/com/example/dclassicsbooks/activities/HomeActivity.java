@@ -7,9 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dclassicsbooks.R;
+import com.example.dclassicsbooks.adapter.BookAdapter;
+import com.example.dclassicsbooks.model.Book;
 import com.example.dclassicsbooks.utils.ToastHelper;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -27,5 +33,43 @@ public class HomeActivity extends AppCompatActivity {
                     R.drawable.ic_success
             );
         }
+
+        ArrayList<Book> bookList = new ArrayList<>();
+
+        bookList.add(new Book(
+                "Living Economics",
+                "Peter J. Boettke",
+                5.0f,
+                R.drawable.book1));
+
+        bookList.add(new Book(
+                "Christopher Columbus",
+                "Kristal Zahide",
+                4.7f,
+                R.drawable.book2));
+
+        bookList.add(new Book(
+                "Atomic Habits",
+                "James Clear",
+                4.8f,
+                R.drawable.book3));
+
+        bookList.add(new Book(
+                "The Adventure of Sherlock Holmes",
+                "Arthur Conan Doyle",
+                4.6f,
+                R.drawable.book4));
+
+        RecyclerView recyclerView = findViewById(R.id.bookRecycler);
+
+        recyclerView.setLayoutManager(
+                new LinearLayoutManager(
+                        this,
+                        LinearLayoutManager.HORIZONTAL,
+                        false));
+
+        BookAdapter adapter = new BookAdapter(bookList);
+
+        recyclerView.setAdapter(adapter);
     }
 }
