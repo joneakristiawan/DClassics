@@ -39,7 +39,7 @@
                 <View
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:background="@drawable/bg_circle_blue" />
+                    android:background="@drawable/circle" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -199,7 +199,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/bg_input_rounded"
                         android:hint="e.g Jalan Indonesia Raya..."
                         android:paddingHorizontal="16dp"
                         android:textSize="14sp" />
@@ -216,7 +215,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/bg_input_rounded"
                         android:hint="081234567890"
                         android:inputType="phone"
                         android:paddingHorizontal="16dp"
@@ -227,7 +225,6 @@
                         android:layout_height="54dp"
                         android:layout_marginTop="24dp"
                         android:text="Order Now"
-                        app:icon="@drawable/ic_cart"
                         app:iconGravity="textStart"
                         app:cornerRadius="12dp"
                         android:backgroundTint="#214467" />

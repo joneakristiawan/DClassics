@@ -9,8 +9,8 @@
     <!-- Book Cover -->
 
     <androidx.cardview.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="210dp"
+        android:layout_width="145dp"
+        android:layout_height="220dp"
         android:layout_gravity="center"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
@@ -33,10 +33,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="7dp"
         android:maxLines="2"
         android:ellipsize="end"
         android:text="Atomic Habits"
-        android:textColor="#111111"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"/>
 
@@ -48,29 +50,44 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:maxLines="1"
+        android:layout_marginStart="7dp"
         android:ellipsize="end"
         android:text="James Clear"
+        android:alpha="0.8"
+        android:fontFamily="@font/montserrat_medium"
         android:textColor="#666666"
         android:textSize="13sp"/>
 
     <!-- Rating -->
 
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4.8"
+        android:stepSize="0.5"
+        android:progressTint="@color/primary_blue"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="7dp">
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            style="?android:attr/ratingBarStyleSmall"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:isIndicator="true"
-            android:numStars="5"
-            android:rating="4.8"
-            android:stepSize="0.5"/>
+            android:text="Rated"
+            android:textColor="#444444"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="12sp"/>
 
         <TextView
             android:id="@+id/ratingText"
@@ -78,9 +95,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:text="4.8"
+            android:fontFamily="@font/montserrat_medium"
             android:textColor="#444444"
             android:textSize="12sp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="/ 5.0"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="#444444"
+            android:textSize="12sp"/>
     </LinearLayout>
 
 </LinearLayout>

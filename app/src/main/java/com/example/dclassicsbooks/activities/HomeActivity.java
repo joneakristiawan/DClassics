@@ -37,9 +37,9 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<Book> bookList = new ArrayList<>();
 
         bookList.add(new Book(
-                "Living Economics",
+                "The Living Economics",
                 "Peter J. Boettke",
-                5.0f,
+                4.8f,
                 R.drawable.book1));
 
         bookList.add(new Book(
@@ -55,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
                 R.drawable.book3));
 
         bookList.add(new Book(
-                "The Adventure of Sherlock Holmes",
+                "Adventure of Sherlock Holmes",
                 "Arthur Conan Doyle",
                 4.6f,
                 R.drawable.book4));

@@ -67,7 +67,7 @@
                 android:paddingEnd="20dp"
                 android:paddingBottom="4dp"
                 android:text="Book Store"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="16dp"
                 android:textStyle="bold" />
 
@@ -76,7 +76,7 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="20dp"
                 android:alpha="0.2"
-                android:background="#000000" />
+                android:background="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,9 +84,15 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Login"
-                android:textColor="#1F4E79"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/primary_blue"
                 android:textSize="40dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:shadowColor="#55000000"
+                android:shadowDx="0"
+                android:shadowDy="3"
+                android:shadowRadius="4"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -159,10 +165,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="40dp"
-                android:backgroundTint="#204C71"
+                android:backgroundTint="@color/secondary_blue"
                 android:text="Login"
                 android:textAllCaps="false"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:cornerRadius="20dp" />
@@ -178,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Don't have an account? "
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <TextView
@@ -188,7 +194,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:text="Register"
-                    android:textColor="#204C71"
+                    android:textColor="@color/secondary_blue"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
